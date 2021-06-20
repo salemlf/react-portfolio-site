@@ -218,7 +218,7 @@ const AboutHoverSVG = () => {
 
 const ProjectsDefaultSVG = () => {
   return (
-    <g id="projects-default" class="mobile-icon-default">
+    <g id="projects-default" className="mobile-icon-default">
       <path
         style={{
           stroke: "none",
@@ -315,7 +315,7 @@ const ProjectsDefaultSVG = () => {
 
 const ProjectsHoverSVG = () => {
   return (
-    <g id="projects-hover" class="mobile-icon-hover">
+    <g id="projects-hover" className="mobile-icon-hover">
       <path
         style={{
           stroke: "none",
@@ -412,7 +412,7 @@ const ProjectsHoverSVG = () => {
 
 const HobbiesDefaultSVG = () => {
   return (
-    <g id="hobbies-default" class="mobile-icon-default">
+    <g id="hobbies-default" className="mobile-icon-default">
       <path
         d="M4.51007 25.0099C4.59863 25.2276 5.33007 29.1099 10.4551 29.1099C20.9101 29.1099 22.9601 9.42993 36.0801 9.42993V34.0299H4.51007V25.0099Z"
         fill="#F9E65C"
@@ -658,7 +658,7 @@ const HobbiesDefaultSVG = () => {
 
 const HobbiesHoverSVG = () => {
   return (
-    <g id="hobbies-hover" class="mobile-icon-hover">
+    <g id="hobbies-hover" className="mobile-icon-hover">
       <path
         d="M4.51001 25.01C4.59857 25.2277 5.33001 29.11 10.455 29.11C20.91 29.11 22.96 9.42996 36.08 9.42996V34.03H4.51001V25.01Z"
         fill="#DEAB9E"
@@ -901,7 +901,7 @@ const HobbiesHoverSVG = () => {
 
 const ContactDefaultSVG = () => {
   return (
-    <g id="contact-default" class="mobile-icon-default">
+    <g id="contact-default" className="mobile-icon-default">
       <path
         d="M9.02007 28.789C9.02007 31.5701 9.02007 34.0301 7.38007 35.6701C10.1308 35.6701 13.5301 34.8501 15.6539 31.8259C17.1856 32.1925 18.8129 32.3901 20.5001 32.3901C29.5574 32.3901 36.9001 26.6997 36.9001 19.6801C36.9001 12.6605 29.5574 6.97008 20.5001 6.97008C11.4428 6.97008 4.10007 12.6605 4.10007 19.6801C4.10007 23.2352 5.98402 26.4508 9.02007 28.7579V28.789Z"
         fill="#E3CE63"
@@ -956,7 +956,7 @@ const ContactDefaultSVG = () => {
 
 const ContactHoverSVG = () => {
   return (
-    <g id="contact-hover" class="mobile-icon-hover">
+    <g id="contact-hover" className="mobile-icon-hover">
       <path
         d="M9.01997 28.789C9.01997 31.5701 9.01997 34.0301 7.37998 35.6701C10.1307 35.6701 13.53 34.8501 15.6538 31.8259C17.1855 32.1925 18.8128 32.3901 20.5 32.3901C29.5573 32.3901 36.9 26.6997 36.9 19.6801C36.9 12.6605 29.5573 6.97008 20.5 6.97008C11.4427 6.97008 4.09998 12.6605 4.09998 19.6801C4.09998 23.2352 5.98393 26.4508 9.01997 28.7579V28.789Z"
         fill="#DEAB9E"
