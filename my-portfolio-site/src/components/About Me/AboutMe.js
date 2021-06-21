@@ -5,6 +5,7 @@ import NameDiv from "../../images/name-background-div.svg";
 import PersonOnComputer from "../../images/person-on-computer.svg";
 import SectionHeading from "../SectionHeadings/SectionHeading.js";
 import InfoIcon from "../../images/Info Squared.svg";
+import AboutMeDiv from "./AboutMeDiv.js";
 
 const AboutMe = () => {
   return (
@@ -30,6 +31,8 @@ const AboutMe = () => {
           iconSrc={InfoIcon}
           altText={"Info icon for about me section"}
         />
+        <AboutMeDiv height="500px" width="50%" bgColor={"var(--yellow)"} />
+        <AboutMeDiv height="500px" width="50%" bgColor={"var(--pink)"} />
       </FlexWrapper>
     </Wrapper>
   );

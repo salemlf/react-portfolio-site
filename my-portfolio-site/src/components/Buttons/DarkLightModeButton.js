@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import SunIcon from "../images/sun.svg";
+// import styled from "styled-components/macro";
+import SunIcon from "../../images/sun.svg";
 
 const Wrapper = styled.button`
   background-color: #e3ce63;
@@ -28,7 +29,7 @@ const Wrapper = styled.button`
 `;
 
 function DarkLightModeButton({ className }) {
-  return <Wrapper className={className}></Wrapper>;
+  return <Wrapper className={className} />;
 }
 
 export default DarkLightModeButton;

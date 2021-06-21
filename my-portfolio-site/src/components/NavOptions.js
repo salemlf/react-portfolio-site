@@ -1021,7 +1021,7 @@ function NavOptions({ className }) {
           svgDefaultID="#home-default"
           svgHoverID="#home-hover"
           viewBoxArg="100"
-        ></MobileNavChoice>
+        />
         <MobileNavChoice
           navItem="About"
           link="#"
@@ -1030,7 +1030,7 @@ function NavOptions({ className }) {
           svgDefaultID="#about-me-default"
           svgHoverID="#about-me-hover"
           viewBoxArg="40"
-        ></MobileNavChoice>
+        />
         <MobileNavChoice
           navItem="Projects"
           link="#"
@@ -1039,7 +1039,7 @@ function NavOptions({ className }) {
           svgDefaultID="#projects-default"
           svgHoverID="#projects-hover"
           viewBoxArg="100"
-        ></MobileNavChoice>
+        />
         <MobileNavChoice
           navItem="Hobbies"
           link="#"
@@ -1048,7 +1048,7 @@ function NavOptions({ className }) {
           svgDefaultID="#hobbies-default"
           svgHoverID="#hobbies-hover"
           viewBoxArg="41"
-        ></MobileNavChoice>
+        />
         <MobileNavChoice
           navItem="Contact"
           link="#"
@@ -1057,7 +1057,7 @@ function NavOptions({ className }) {
           svgDefaultID="#contact-default"
           svgHoverID="#contact-hover"
           viewBoxArg="41"
-        ></MobileNavChoice>
+        />
       </NavItems>
     </Wrapper>
   );

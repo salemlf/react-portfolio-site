@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+// import styled from "styled-components/macro";
 
 import {
   Wrapper,
@@ -13,13 +14,13 @@ import {
 function MobileMenu({ toggle, isOpen }) {
   return (
     // TODO: change to use WrapperVisbility
-    <WrapperVisbility isOpen={isOpen}>
+    <Wrapper isOpen={isOpen}>
       <ButtonContainer>
         <GridDarkLightModeButton />
         <GridResumeButton />
       </ButtonContainer>
       <GridNavOptions />
-    </WrapperVisbility>
+    </Wrapper>
   );
 }
 

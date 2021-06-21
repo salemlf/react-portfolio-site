@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import NavOptions from "../NavOptions";
-import DarkLightModeButton from "../DarkLightModeButton";
-import ResumeButton from "../ResumeButton";
+import DarkLightModeButton from "../Buttons/DarkLightModeButton";
+import ResumeButton from "../Buttons/ResumeButton";
 
 // TODO: change right value based on show/hide prop
 export const Wrapper = styled.nav`
@@ -21,6 +21,7 @@ export const Wrapper = styled.nav`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 3fr;
+  right: ${({ isOpen }) => (isOpen ? "0" : "-75vw")};
 `;
 
 export const ButtonContainer = styled.div`
@@ -47,6 +48,4 @@ export const GridResumeButton = styled(ResumeButton)`
   grid-column-end: 3;
 `;
 
-export const WrapperVisbility = styled(Wrapper)`
-  right: ${({ isOpen }) => (isOpen ? "0" : "-75vw")};
-`;
+// export const WrapperVisbility = styled(Wrapper)``;

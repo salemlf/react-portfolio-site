@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+// TODO: move style into their own file
 const Wrapper = styled.a`
   color: #f7eede;
   text-decoration: none;
@@ -114,13 +115,13 @@ function MobileNavChoice({
               className="mobile-icon mobile-icon-default"
               viewBox={`0 0 ${viewBoxArg} ${viewBoxArg}`}
             >
-              <use href={svgDefaultID}></use>
+              <use href={svgDefaultID} />
             </MobileIcon>
             <MobileIcon
               className="mobile-icon mobile-icon-hover"
               viewBox={`0 0 ${viewBoxArg} ${viewBoxArg}`}
             >
-              <use href={svgHoverID}></use>
+              <use href={svgHoverID} />
             </MobileIcon>
           </ChangeLink>
         </NavColumn>

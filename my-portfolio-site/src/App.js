@@ -6,6 +6,7 @@ import AboutMe from "./components/About Me/AboutMe.js";
 
 // TODO: add state for mobile menu visibility
 // TODO: move isOpen functionality into different component
+// TODO: fix overflow issue
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);

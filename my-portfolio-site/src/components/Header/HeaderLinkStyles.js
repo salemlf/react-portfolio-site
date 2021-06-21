@@ -88,6 +88,7 @@ export const Link = styled.a`
   color: var(--offWhite);
   cursor: pointer;
   transition: color 300ms ease-in-out;
+  z-index: 3;
 `;
 
 /* slide in class */

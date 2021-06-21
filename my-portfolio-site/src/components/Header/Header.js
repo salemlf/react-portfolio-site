@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderLink from "./HeaderLink";
-import DarkLightModeButton from "../DarkLightModeButton";
+import DarkLightModeButton from "../Buttons/DarkLightModeButton";
 
 import {
   Wrapper,

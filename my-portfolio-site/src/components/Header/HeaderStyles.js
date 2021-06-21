@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import ResumeButton from "../ResumeButton";
+// import styled from "styled-components/macro";
+import ResumeButton from "../Buttons/ResumeButton";
 
 export const Wrapper = styled.nav`
   padding: 1.0625rem 1.5rem;
