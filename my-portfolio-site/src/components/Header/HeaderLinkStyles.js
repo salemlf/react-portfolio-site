@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
+// TODO: get rid of weird glitchiness between links
 
 export const lineSquiggleAnimation1 = keyframes`
     0% {
@@ -75,16 +76,18 @@ export const lineSquiggleAnimation4 = keyframes`
 
 export const Wrapper = styled.div`
   display: flex;
-  height: 70px;
-  width: 100px;
+  height: max-content;
+  /* width: 100px; */
 `;
+
+// TODO: pass in min and max font-sizes, use
 
 export const Link = styled.a`
   display: flex;
   align-items: center;
   position: relative;
-  overflow: hidden;
-  font-size: var(--font-lrg);
+  /* overflow: hidden; */
+  font-size: calc(14px + (32 - 14) * ((100vw - 250px) / (1600 - 250)));
   color: var(--offWhite);
   cursor: pointer;
   transition: color 300ms ease-in-out;
@@ -95,10 +98,12 @@ export const Link = styled.a`
 export const SquigglyUnderlineContainer = styled.div`
   align-self: flex-end;
   position: absolute;
-  left: -100px;
-  width: 75px;
-  height: 25px;
+  left: -100%;
+  /* width: 75px; */
+  width: 100%;
+  /* height: 25px; */
   transition: 1s;
+  top: 10px;
 
   ${Wrapper}:hover & {
     left: 0;

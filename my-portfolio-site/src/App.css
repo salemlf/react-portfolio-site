@@ -36,6 +36,12 @@ body {
   font-weight: 300;
   background-color: var(--deepDarkBlue);
 }
+
+.App {
+  /* !added */
+  overflow-x: clip;
+}
+
 a,
 a:visited,
 a:hover {

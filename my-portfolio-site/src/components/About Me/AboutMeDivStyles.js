@@ -6,5 +6,6 @@ export const Wrapper = styled.div`
   height: ${(props) => props.height};
   width: ${(props) => props.width};
   background-color: ${(props) => props.bgColor};
+  max-width: ${(props) => props.maxWidth};
   border-radius: 5px;
 `;

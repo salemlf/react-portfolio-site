@@ -1,9 +1,8 @@
 import styled from "styled-components";
-// import styled from "styled-components/macro";
 import ResumeButton from "../Buttons/ResumeButton";
 
+/* TODO: add min and max padding for different screen sizes */
 export const Wrapper = styled.nav`
-  padding: 1.0625rem 1.5rem;
   background-color: var(--mediumBlue);
   color: var(--offWhite);
 
@@ -39,28 +38,36 @@ export const LinkWrapper = styled.div`
 export const ResumeButtonDesktop = styled(ResumeButton)`
   width: 20vw;
 `;
+// TODO: temporary, will change when logo is made
+export const MobileLogoText = styled.a`
+  display: none;
+  @media only screen and (max-width: 900px) {
+    display: inline-block;
+  }
+`;
 
 export const HamburgerMenu = styled.div`
   display: none;
   width: 100px;
-  height: 100px;
+  height: auto;
 
   @media only screen and (max-width: 900px) {
     display: flex;
     align-items: center;
     position: relative;
     z-index: 4;
+    margin-left: 75%;
   }
 
   span {
     display: block;
     position: relative;
-    width: 50px;
-    height: 3px;
+    width: calc(30px + (50 - 30) * ((100vw - 250px) / (900 - 250)));
+    height: calc(2px + (3 - 2) * ((100vw - 250px) / (900 - 250)));
     background-color: var(--offWhite);
 
     &:not(:last-child) {
-      margin-bottom: 14px;
+      margin-bottom: calc(7px + (14 - 7) * ((100vw - 250px) / (900 - 250)));
     }
   }
 `;

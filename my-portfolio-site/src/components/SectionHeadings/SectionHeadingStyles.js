@@ -11,22 +11,23 @@ export const Wrapper = styled.div`
 // TODO: change font-family
 export const HeadingText = styled.h2`
   text-transform: uppercase;
-  font-size: 40px;
-  letter-spacing: 4px;
+  /* font-size: 40px; */
+  font-size: calc(24px + (70 - 24) * ((100vw - 250px) / (1600 - 250)));
+  letter-spacing: 5px;
   align-self: ${(props) => props.alignSelf};
   color: ${(props) => props.color};
 `;
 
 export const Icon = styled.img`
-  width: 78px;
-  height: 78px;
+  width: calc(30px + (78 - 30) * ((100vw - 250px) / (1600 - 250)));
+  height: calc(30px + (78 - 30) * ((100vw - 250px) / (1600 - 250)));
 `;
 
 export const TextIconContainer = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  width: 50%;
+  width: max-content;
 `;
 
 export const Line = styled.hr`

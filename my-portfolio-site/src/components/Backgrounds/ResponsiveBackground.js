@@ -7,10 +7,11 @@ const ResponsiveBackground = ({
   altText,
   zIndex,
   top,
+  maxHeight,
 }) => {
   return (
     <Wrapper passedHeight={passedHeight} zIndex={zIndex} top={top}>
-      <Image src={image} alt={altText} />
+      <Image src={image} alt={altText} maxHeight={maxHeight} />
     </Wrapper>
   );
 };

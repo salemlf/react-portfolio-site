@@ -5,14 +5,37 @@ export const Wrapper = styled.div`
   width: 100%;
 `;
 
-// TODO: create section container component
+export const AboutMeContent = styled.div`
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  top: -30vw;
+`;
+
 export const FlexWrapper = styled.section`
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   align-items: center;
   position: relative;
-  top: -80vw;
+  top: -48vw;
+`;
+
+export const BgImg = styled.img`
+  width: 100%;
+  height: auto;
+  transform: scale(3.7);
+  object-fit: cover;
+`;
+
+export const BgImgContainer = styled.div`
+  width: 100%;
+  position: absolute;
+  top: 140px;
 `;
