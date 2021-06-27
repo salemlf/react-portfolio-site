@@ -2,8 +2,15 @@ import styled from "styled-components";
 // import styled from "styled-components/macro";
 
 export const Wrapper = styled.div`
+  width: 100%;
+`;
+
+export const InnerWrapper = styled.div`
   display: flex;
-  flex-basis: 100%;
+  width: 100%;
+  flex-direction: column;
+  /* justify-content:${(props) => props.justifyContent}; */
+  margin-bottom: 10px;
 `;
 
 // TODO: pass margin-left value?
@@ -16,6 +23,8 @@ export const HeadingText = styled.h2`
   letter-spacing: 5px;
   align-self: ${(props) => props.alignSelf};
   color: ${(props) => props.color};
+  width: max-content;
+  margin-bottom: 5px;
 `;
 
 export const Icon = styled.img`
@@ -25,15 +34,17 @@ export const Icon = styled.img`
 
 export const TextIconContainer = styled.div`
   display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  align-items: flex-end;
   width: max-content;
+  margin-left: 0;
+  justify-content: left;
 `;
 
 export const Line = styled.hr`
   width: 50%;
-  min-width: 300px;
+  /* min-width: 300px; */
   border: 1px solid var(--yellow);
   position: relative;
-  right: 50%;
+  margin-left: ${(props) => props.marginLeftHr};
+  /* right: 50%; */
 `;

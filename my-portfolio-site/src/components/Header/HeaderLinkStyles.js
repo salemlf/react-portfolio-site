@@ -116,6 +116,7 @@ export const UnderlineInnerContainer = styled.div`
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s ease-in;
+  height: auto;
 
   #wiggle-one {
     animation: ${lineSquiggleAnimation1} 500ms ease infinite;

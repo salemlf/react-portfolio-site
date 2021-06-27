@@ -6,6 +6,7 @@ import {
   BgImg,
   BgImgContainer,
   AboutMeContent,
+  AboutDivContainer
 } from "./AboutMeStyles.js";
 import NameDiv from "../../images/name-background-div.svg";
 import PersonOnComputer from "../../images/person-on-computer.svg";
@@ -28,6 +29,7 @@ const AboutMe = () => {
         top={"-17vw"}
         maxHeight={"96vmax"}
       />
+      {/* TODO: add text here with this font: font-family: 'Condiment', cursive; */}
       <ResponsiveBackground
         image={PersonOnComputer}
         passedHeight={"70vw"}
@@ -39,14 +41,17 @@ const AboutMe = () => {
       <FlexWrapper>
         <AboutMeContent>
           <SectionHeading
-            text={"About Me"}
+            text="About Me"
             color={"var(--pink)"}
             iconSrc={InfoIcon}
-            altText={"Info icon for about me section"}
+            altText="Info icon for about me section"
+            marginLeftHr="20px"
           />
           {/* TODO: use max-width on divs */}
-          <AboutMeDiv height="500px" width="50%" bgColor={"var(--yellow)"} />
-          <AboutMeDiv height="500px" width="50%" bgColor={"var(--pink)"} />
+          <AboutDivContainer>
+            <AboutMeDiv height="50vw" width="45vw" bgColor={"var(--yellow)"} zIndex="1" marginLeft="-22vw"/>
+            <AboutMeDiv height="55vw" width="45vw" bgColor={"var(--pink)"} zIndex="2" marginLeft="22vw" marginTop="40vw"/>
+          </AboutDivContainer>
         </AboutMeContent>
         <BgImgContainer>
           <BgImg src={AboutBgBlob} alt="" />

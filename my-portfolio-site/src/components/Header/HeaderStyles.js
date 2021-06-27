@@ -8,7 +8,12 @@ export const Wrapper = styled.nav`
 
   @media only screen and (max-width: 900px) {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 11vmin;
+    min-height: 68px;
+    max-height: 300px;
   }
 `;
 
@@ -56,7 +61,8 @@ export const HamburgerMenu = styled.div`
     align-items: center;
     position: relative;
     z-index: 4;
-    margin-left: 75%;
+    margin-right: 3vw;
+    justify-content: flex-end;
   }
 
   span {
@@ -72,8 +78,14 @@ export const HamburgerMenu = styled.div`
   }
 `;
 
+export const HamburgerMenuLink = styled.a`
+ display: inline-block;
+ margin-left: 3vw;
+`;
+
 // TODO: temporary (will be image for logo), change
 export const LogoText = styled.h2`
-  font-size: 60px;
+  /* font-size: 60px; */
+  font-size: calc(30px + (60 - 30) * ((100vw - 250px) / (900 - 250)));
   line-height: 0.5;
 `;
