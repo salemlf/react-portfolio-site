@@ -7,13 +7,12 @@ import ResumeButton from "../Buttons/ResumeButton";
 export const Wrapper = styled.nav`
   background-color: #7c5a90;
   color: #f7eede;
-  bottom: 10%;
-  max-width: 750px;
-  height: 82vh;
+  height: 58vmax;
   overflow: auto;
   position: fixed;
   top: 0;
-  width: 50vw;
+  width: 68vmin;
+  max-width: 100%;
   text-align: center;
   z-index: 3;
   border-radius: 0px 0px 0px 10px;
@@ -26,11 +25,13 @@ export const Wrapper = styled.nav`
 
 export const ButtonContainer = styled.div`
   display: flex;
-  align-items: center;
+  align-content: center;
   flex-wrap: wrap;
   grid-column-start: 1;
   grid-column-end: 3;
-  justify-content: center;
+  justify-content: space-evenly;
+  min-height: 80px;
+  height: 11vmin;
 `;
 
 export const GridNavOptions = styled(NavOptions)`

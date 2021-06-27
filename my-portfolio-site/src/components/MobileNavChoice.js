@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 // TODO: move style into their own file
 const Wrapper = styled.a`
+  width: 100%;
   color: #f7eede;
   text-decoration: none;
   border-left: 5px solid #7b5b92;
@@ -33,7 +34,7 @@ const Row = styled.div`
   flex-wrap: wrap;
   width: 100%;
   height: clamp(16px, 11vw, 60px);
-  margin: 14px 0;
+  margin: 10px 0;
   padding: 0 0;
   align-content: center;
   align-items: center;

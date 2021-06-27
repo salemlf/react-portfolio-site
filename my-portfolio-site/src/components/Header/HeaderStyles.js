@@ -12,7 +12,7 @@ export const Wrapper = styled.nav`
     align-items: center;
     width: 100%;
     height: 11vmin;
-    min-height: 68px;
+    min-height: 80px;
     max-height: 300px;
   }
 `;
@@ -79,8 +79,8 @@ export const HamburgerMenu = styled.div`
 `;
 
 export const HamburgerMenuLink = styled.a`
- display: inline-block;
- margin-left: 3vw;
+  display: inline-block;
+  margin-left: 3vw;
 `;
 
 // TODO: temporary (will be image for logo), change

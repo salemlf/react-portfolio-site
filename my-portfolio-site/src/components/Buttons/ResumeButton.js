@@ -3,13 +3,13 @@ import styled from "styled-components";
 
 const Wrapper = styled.button`
   border-radius: 5px;
-  font-size: 1.1rem;
-  width: 15vw;
+  font-size: calc(12px + (40 - 12) * ((100vw - 250px) / (1600 - 250)));
+  width: 20vw;
   height: 10vw;
-  max-width: 155px;
-  max-height: 70px;
-  min-width: 115px;
-  min-height: 50px;
+  max-width: 130px;
+  max-height: 60px;
+  min-width: 65px;
+  min-height: 30px;
   box-shadow: inset 2px 5px 8px rgba(0, 0, 0, 0.25);
   box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
   border: 0;
@@ -29,8 +29,7 @@ const Wrapper = styled.button`
 
 const ButtonText = styled.p`
   font-family: "Oswald", sans-serif;
-  line-height: 1.3;
-  font-size: var(--font-lrg);
+  line-height: 1;
 `;
 
 function ResumeButton({ className }) {

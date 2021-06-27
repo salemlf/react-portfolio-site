@@ -2,12 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import MobileNavChoice from "./MobileNavChoice";
 
+// TODO: move into style file
 const Wrapper = styled.section`
-  width: auto;
+  width: 100%;
   display: flex;
   padding: 0px 10px 0px 0px;
-  height: 67vh;
-  flex-direction: column;
+  height: 100%;
+  /* flex-direction: column; */
   justify-content: center;
 `;
 
@@ -17,7 +18,10 @@ const NavItems = styled.ul`
   padding-left: 0px;
   list-style-type: none;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
 `;
 
 //TODO: do in less gross way

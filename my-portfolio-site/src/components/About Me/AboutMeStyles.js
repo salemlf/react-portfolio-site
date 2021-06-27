@@ -32,7 +32,8 @@ export const FlexWrapper = styled.section`
 export const AboutDivContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 150px 1fr;
+  grid-template-rows: 1fr;
   justify-items: center;
   position: relative;
+  width: 90%;
 `;
