@@ -29,23 +29,10 @@ export const FlexWrapper = styled.section`
   top: -48vw;
 `;
 
-export const BgImg = styled.img`
-  width: 100%;
-  height: auto;
-  transform: scale(4.7) translateX(-8vw);
-  object-fit: cover;
-`;
-
-export const BgImgContainer = styled.div`
-  width: 100%;
-  position: absolute;
-  top: 140px;
-  z-index: 0;
-`;
-
 export const AboutDivContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 150px 1fr;
   justify-items: center;
+  position: relative;
 `;

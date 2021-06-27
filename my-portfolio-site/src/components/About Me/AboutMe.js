@@ -3,10 +3,8 @@ import ResponsiveBackground from "../Backgrounds/ResponsiveBackground.js";
 import {
   Wrapper,
   FlexWrapper,
-  BgImg,
-  BgImgContainer,
   AboutMeContent,
-  AboutDivContainer
+  AboutDivContainer,
 } from "./AboutMeStyles.js";
 import NameDiv from "../../images/name-background-div.svg";
 import PersonOnComputer from "../../images/person-on-computer.svg";
@@ -14,13 +12,11 @@ import SectionHeading from "../SectionHeadings/SectionHeading.js";
 import InfoIcon from "../../images/Info Squared.svg";
 import AboutMeDiv from "./AboutMeDiv.js";
 import AboutBgBlob from "../../images/about-me-background-blob.svg";
+import SectionBackground from "../Backgrounds/SectionBackground.js";
 
 const AboutMe = () => {
   return (
     <Wrapper>
-      {/* <BgImgContainer>
-        <BgImg src={AboutBgBlob} alt="" />
-      </BgImgContainer> */}
       <ResponsiveBackground
         image={NameDiv}
         passedHeight={"100vw"}
@@ -47,15 +43,35 @@ const AboutMe = () => {
             altText="Info icon for about me section"
             marginLeftHr="20px"
           />
-          {/* TODO: use max-width on divs */}
           <AboutDivContainer>
-            <AboutMeDiv height="50vw" width="45vw" bgColor={"var(--yellow)"} zIndex="1" marginLeft="-22vw"/>
-            <AboutMeDiv height="55vw" width="45vw" bgColor={"var(--pink)"} zIndex="2" marginLeft="22vw" marginTop="40vw"/>
+            <AboutMeDiv
+              pos="absolute"
+              height="50vw"
+              width="45vw"
+              bgColor={"var(--yellow)"}
+              zIndex="1"
+              marginLeft="-50%"
+              maxWidth="600px"
+              maxHeight="800px"
+            />
+            <AboutMeDiv
+              pos="relative"
+              height="55vw"
+              width="45vw"
+              bgColor={"var(--pink)"}
+              zIndex="2"
+              marginLeft="44%"
+              marginTop="56%"
+              maxWidth="600px"
+              maxHeight="800px"
+            />
           </AboutDivContainer>
         </AboutMeContent>
-        <BgImgContainer>
-          <BgImg src={AboutBgBlob} alt="" />
-        </BgImgContainer>
+        <SectionBackground
+          top="140px"
+          transformStyles="scale(4.7) translateX(-8vw) rotate(169deg)"
+          imgSrc={AboutBgBlob}
+        />
       </FlexWrapper>
     </Wrapper>
   );
