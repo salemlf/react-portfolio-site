@@ -5,6 +5,8 @@ import ResumeButton from "../Buttons/ResumeButton";
 export const Wrapper = styled.nav`
   background-color: var(--mediumBlue);
   color: var(--offWhite);
+  position: relative;
+  z-index: 2;
 
   @media only screen and (max-width: 900px) {
     display: flex;

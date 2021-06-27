@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   height: 2000px;
   width: 100%;
+  position: relative;
+  z-index: 1;
 `;
 
 export const AboutMeContent = styled.div`

@@ -11,7 +11,7 @@ import {
   HamburgerMenu,
   MobileLogoText,
   LogoText,
-  HamburgerMenuLink
+  HamburgerMenuLink,
 } from "./HeaderStyles.js";
 
 // TODO: change anchor tag and spans to styled component
@@ -42,9 +42,11 @@ const Header = ({ toggle }) => {
         <LogoText>SLF</LogoText>
       </MobileLogoText>
       <HamburgerMenu onClick={toggle}>
-        <HamburgerMenuLink href="#"
+        <HamburgerMenuLink
+          href="#"
           id="hamburgerBtn"
-          className="hamburger hamburger-btn header__menu hide-for-desktop">
+          className="hamburger hamburger-btn header__menu hide-for-desktop"
+        >
           <span />
           <span />
           <span />

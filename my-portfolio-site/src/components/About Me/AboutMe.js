@@ -63,7 +63,7 @@ const AboutMe = () => {
               marginLeft="44%"
               marginTop="56%"
               maxWidth="600px"
-              maxHeight="800px"
+              maxHeight="900px"
             />
           </AboutDivContainer>
         </AboutMeContent>
