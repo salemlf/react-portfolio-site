@@ -42,9 +42,9 @@ export const TextIconContainer = styled.div`
 
 export const Line = styled.hr`
   width: 50%;
-  /* min-width: 300px; */
+  min-width: 176px;
   border: 1px solid var(--yellow);
   position: relative;
   margin-left: ${(props) => props.marginLeftHr};
-  /* right: 50%; */
+  font-size: unset;
 `;

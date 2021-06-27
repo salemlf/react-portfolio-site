@@ -8,8 +8,8 @@ const Wrapper = styled.section`
   display: flex;
   padding: 0px 10px 0px 0px;
   height: 100%;
-  /* flex-direction: column; */
   justify-content: center;
+  overflow-y: clip;
 `;
 
 const NavItems = styled.ul`
@@ -21,7 +21,6 @@ const NavItems = styled.ul`
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-evenly;
-  /* flex-direction: column; */
 `;
 
 //TODO: do in less gross way

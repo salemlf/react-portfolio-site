@@ -9,6 +9,7 @@ export const Wrapper = styled.nav`
   z-index: 2;
 
   @media only screen and (max-width: 900px) {
+    z-index: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
