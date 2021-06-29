@@ -102,7 +102,7 @@ h2 {
 }
 
 h3 {
-  color: var(--yellow);
+  /* color: var(--yellow); */
   font-size: 32px;
   font-family: "Squada One", cursive;
   font-weight: 300;
