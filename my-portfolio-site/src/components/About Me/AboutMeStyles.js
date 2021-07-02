@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  height: 2000px;
   width: 100%;
   position: relative;
   z-index: 1;
@@ -18,6 +17,20 @@ export const AboutMeContent = styled.div`
   top: -30vw;
   z-index: 1;
   justify-content: center;
+`;
+
+export const NameHeading = styled.h1`
+  font-size: calc(20px + (100 - 20) * ((100vw - 250px) / (1600 - 250)));
+  font-family: "Condiment", cursive;
+  color: var(--mediumBlue);
+  margin-bottom: 0px;
+`;
+
+export const NameSubtitle = styled.h1`
+  font-size: calc(18px + (80 - 18) * ((100vw - 250px) / (1600 - 250)));
+  font-family: "Condiment", cursive;
+  color: var(--yellow);
+  margin: 2px 0px 0px 0px;
 `;
 
 export const FlexWrapper = styled.section`

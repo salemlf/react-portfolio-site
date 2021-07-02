@@ -1,13 +1,13 @@
 import React from "react";
 import HeaderLink from "./HeaderLink";
 import DarkLightModeButton from "../Buttons/DarkLightModeButton";
+import ResumeButton from "../Buttons/ResumeButton";
 
 import {
   Wrapper,
   ButtonAndLinkContainer,
   ButtonContainer,
   LinkWrapper,
-  ResumeButtonDesktop,
   HamburgerMenu,
   MobileLogoText,
   LogoText,
@@ -35,7 +35,7 @@ const Header = ({ toggle }) => {
         </LinkWrapper>
         <ButtonContainer>
           <DarkLightModeButton />
-          <ResumeButtonDesktop />
+          <ResumeButton />
         </ButtonContainer>
       </ButtonAndLinkContainer>
       <MobileLogoText>

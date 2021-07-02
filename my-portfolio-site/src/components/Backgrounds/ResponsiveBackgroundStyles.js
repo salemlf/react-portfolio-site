@@ -15,3 +15,10 @@ export const Image = styled.img`
   height: 100%;
   max-height: ${(props) => props.maxHeight};
 `;
+
+export const NameContent = styled.div`
+  position: absolute;
+  top: 26vw;
+  width: 100%;
+  text-align: center;
+`;

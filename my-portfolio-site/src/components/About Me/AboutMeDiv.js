@@ -12,6 +12,7 @@ const AboutMeDiv = ({
   marginTop,
   maxHeight,
   pos,
+  children,
 }) => {
   return (
     <Wrapper
@@ -24,7 +25,9 @@ const AboutMeDiv = ({
       bgColor={bgColor}
       maxWidth={maxWidth}
       maxHeight={maxHeight}
-    />
+    >
+      {children}
+    </Wrapper>
   );
 };
 

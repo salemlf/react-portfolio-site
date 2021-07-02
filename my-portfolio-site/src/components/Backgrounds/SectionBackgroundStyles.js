@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
 
 export const BgImg = styled.img`
   width: 100%;
-  height: auto;
+  height: unset;
   transform: ${(props) => props.transformStyles};
   object-fit: cover;
 `;

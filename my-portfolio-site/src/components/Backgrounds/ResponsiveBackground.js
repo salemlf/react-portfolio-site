@@ -1,5 +1,5 @@
 import React from "react";
-import { Wrapper, Image } from "./ResponsiveBackgroundStyles.js";
+import { Wrapper, Image, NameContent } from "./ResponsiveBackgroundStyles.js";
 
 const ResponsiveBackground = ({
   image,
@@ -8,9 +8,11 @@ const ResponsiveBackground = ({
   zIndex,
   top,
   maxHeight,
+  children,
 }) => {
   return (
     <Wrapper passedHeight={passedHeight} zIndex={zIndex} top={top}>
+      <NameContent>{children}</NameContent>
       <Image src={image} alt={altText} maxHeight={maxHeight} />
     </Wrapper>
   );

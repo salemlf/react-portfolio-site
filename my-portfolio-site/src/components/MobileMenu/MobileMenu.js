@@ -8,7 +8,6 @@ import {
   GridNavOptions,
   GridDarkLightModeButton,
   GridResumeButton,
-  WrapperVisbility,
 } from "./MobileMenuStyles.js";
 
 function MobileMenu({ toggle, isOpen }) {

@@ -7,7 +7,7 @@ import ResumeButton from "../Buttons/ResumeButton";
 export const Wrapper = styled.nav`
   background-color: #7c5a90;
   color: #f7eede;
-  height: 58vmax;
+  height: 62vmax;
   overflow: auto;
   position: fixed;
   top: 0;
@@ -19,7 +19,7 @@ export const Wrapper = styled.nav`
   transition: all 300ms ease-in-out;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 1fr 4fr;
   right: ${({ isOpen }) => (isOpen ? "0" : "-75vw")};
 `;
 
@@ -29,9 +29,9 @@ export const ButtonContainer = styled.div`
   flex-wrap: wrap;
   grid-column-start: 1;
   grid-column-end: 3;
-  justify-content: space-evenly;
-  min-height: 80px;
-  height: 11vmin;
+  justify-content: space-around;
+  min-height: 78px;
+  height: 10vmin;
 `;
 
 export const GridNavOptions = styled(NavOptions)`
@@ -48,5 +48,3 @@ export const GridResumeButton = styled(ResumeButton)`
   grid-column-start: 2;
   grid-column-end: 3;
 `;
-
-// export const WrapperVisbility = styled(Wrapper)``;

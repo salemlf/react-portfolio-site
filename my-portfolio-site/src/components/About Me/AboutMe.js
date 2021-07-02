@@ -5,6 +5,8 @@ import {
   FlexWrapper,
   AboutMeContent,
   AboutDivContainer,
+  NameHeading,
+  NameSubtitle,
 } from "./AboutMeStyles.js";
 import NameDiv from "../../images/name-background-div.svg";
 import PersonOnComputer from "../../images/person-on-computer.svg";
@@ -22,6 +24,7 @@ import WorkUnderline from "../../images/squiggly-line-work.svg";
 const AboutMe = () => {
   return (
     <Wrapper>
+      {/* TODO: pass in name as child */}
       <ResponsiveBackground
         image={NameDiv}
         passedHeight={"100vw"}
@@ -29,6 +32,12 @@ const AboutMe = () => {
         zIndex={1}
         top={"-17vw"}
         maxHeight={"96vmax"}
+        children={
+          <div>
+            <NameHeading>Salem Fenn</NameHeading>
+            <NameSubtitle>Frontend Engineer</NameSubtitle>
+          </div>
+        }
       />
       {/* TODO: add text here with this font: font-family: 'Condiment', cursive; */}
       <ResponsiveBackground
@@ -60,9 +69,10 @@ const AboutMe = () => {
               maxHeight="800px"
             >
               <AboutMeHeading
-                color={"var(--mediumBlue)"}
                 text="Bio"
                 imgSrc={AboutUnderline}
+                zzWidth="10vw"
+                scale="scaleY(0.8)"
               />
             </AboutMeDiv>
             <AboutMeDiv
@@ -77,16 +87,21 @@ const AboutMe = () => {
               maxHeight="900px"
             >
               <AboutMeHeading
-                color={"var(--mediumBlue)"}
                 text="Skills"
                 imgSrc={SkillsUnderline}
+                zzWidth="12vw"
+                wrapHeight="40%"
+                scale="scaleY(0.8)"
               />
-              {/* TODO: add content here */}
+              {/* TODO: add skills content here */}
               <AboutMeHeading
-                color={"var(--mediumBlue)"}
                 text="Work History"
                 imgSrc={WorkUnderline}
+                zzWidth="24vw"
+                wrapHeight="60%"
+                scale="scaleY(0.7)"
               />
+              {/* TODO: add work content here */}
             </AboutMeDiv>
           </AboutDivContainer>
         </AboutMeContent>

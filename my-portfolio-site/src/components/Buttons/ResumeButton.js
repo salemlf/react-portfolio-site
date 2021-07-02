@@ -3,13 +3,9 @@ import styled from "styled-components";
 
 const Wrapper = styled.button`
   border-radius: 5px;
-  font-size: calc(12px + (40 - 12) * ((100vw - 250px) / (1600 - 250)));
-  width: 20vw;
-  height: 10vw;
-  max-width: 130px;
-  max-height: 60px;
-  min-width: 65px;
-  min-height: 30px;
+  font-size: calc(12px + (30 - 12) * ((100vw - 250px) / (1600 - 250)));
+  padding: calc(4px + (12 - 4) * ((100vw - 250px) / (1600 - 250)))
+    calc(10px + (40 - 10) * ((100vw - 250px) / (1600 - 250)));
   box-shadow: inset 2px 5px 8px rgba(0, 0, 0, 0.25);
   box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
   border: 0;
@@ -29,7 +25,7 @@ const Wrapper = styled.button`
 
 const ButtonText = styled.p`
   font-family: "Oswald", sans-serif;
-  line-height: 1;
+  line-height: 0;
 `;
 
 function ResumeButton({ className }) {

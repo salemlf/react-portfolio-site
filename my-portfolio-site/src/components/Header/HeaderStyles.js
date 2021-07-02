@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import ResumeButton from "../Buttons/ResumeButton";
 
 /* TODO: add min and max padding for different screen sizes */
 export const Wrapper = styled.nav`
@@ -23,7 +22,7 @@ export const Wrapper = styled.nav`
 export const ButtonAndLinkContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 
   @media only screen and (max-width: 901px) {
     display: none;
@@ -33,7 +32,6 @@ export const ButtonAndLinkContainer = styled.div`
 export const ButtonContainer = styled.div`
   display: flex;
   align-items: center;
-  width: 280px;
   margin-right: 10px;
 `;
 
@@ -43,9 +41,6 @@ export const LinkWrapper = styled.div`
   width: 50%;
 `;
 
-export const ResumeButtonDesktop = styled(ResumeButton)`
-  width: 20vw;
-`;
 // TODO: temporary, will change when logo is made
 export const MobileLogoText = styled.a`
   display: none;
