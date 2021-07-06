@@ -1018,7 +1018,7 @@ function NavOptions({ className }) {
       <NavItems>
         <MobileNavChoice
           navItem="Home"
-          link="{javascript:scrollHome()}"
+          link="#"
           svgPathsDefault={<HomeDefaultSVG />}
           svgPathsHover={<HomeHoverSVG />}
           svgDefaultID="#home-default"

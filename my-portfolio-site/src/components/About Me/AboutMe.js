@@ -7,6 +7,10 @@ import {
   AboutDivContainer,
   NameHeading,
   NameSubtitle,
+  SkillsWorkContent,
+  WorkSkillItem,
+  WorkSkillText,
+  ArrowContainer,
 } from "./AboutMeStyles.js";
 import NameDiv from "../../images/name-background-div.svg";
 import PersonOnComputer from "../../images/person-on-computer.svg";
@@ -20,6 +24,8 @@ import AboutMeHeading from "./AboutMeHeading";
 import AboutUnderline from "../../images/squiggle-line-about.svg";
 import SkillsUnderline from "../../images/squiggly-line-skills.svg";
 import WorkUnderline from "../../images/squiggly-line-work.svg";
+import MeImage from "../../images/me.jpg";
+import ImageBg from "../../images/photo-background.svg";
 
 const AboutMe = () => {
   return (
@@ -32,6 +38,7 @@ const AboutMe = () => {
         zIndex={1}
         top={"-17vw"}
         maxHeight={"96vmax"}
+        // TODO: change from div to styled component
         children={
           <div>
             <NameHeading>Salem Fenn</NameHeading>
@@ -62,7 +69,7 @@ const AboutMe = () => {
               pos="absolute"
               height="50vw"
               width="45vw"
-              bgColor={"var(--yellow)"}
+              bgAttr={"var(--yellow)"}
               zIndex="1"
               marginLeft="-50%"
               maxWidth="600px"
@@ -77,31 +84,86 @@ const AboutMe = () => {
             </AboutMeDiv>
             <AboutMeDiv
               pos="relative"
-              height="55vw"
-              width="45vw"
-              bgColor={"var(--pink)"}
+              height="37vw"
+              width="33vw"
+              bgAttr={`url(${MeImage}) center/contain no-repeat`}
+              zIndex="3"
+              marginLeft="76%"
+              maxWidth="500px"
+              maxHeight="430px"
+              top="2%"
+            ></AboutMeDiv>
+            <AboutMeDiv
+              pos="relative"
+              height="50vw"
+              width="53vw"
+              bgAttr={`url(${ImageBg}) top right/cover no-repeat`}
+              zIndex="2"
+              marginLeft="32%"
+              maxWidth="890px"
+              maxHeight="841px"
+              top="-2%"
+            ></AboutMeDiv>
+            <AboutMeDiv
+              pos="relative"
+              height="70vw"
+              width="48vw"
+              bgAttr={"var(--pink)"}
               zIndex="2"
               marginLeft="44%"
               marginTop="56%"
-              maxWidth="600px"
-              maxHeight="900px"
+              maxWidth="830px"
+              maxHeight="1175px"
             >
-              <AboutMeHeading
-                text="Skills"
-                imgSrc={SkillsUnderline}
-                zzWidth="12vw"
-                wrapHeight="40%"
-                scale="scaleY(0.8)"
-              />
-              {/* TODO: add skills content here */}
-              <AboutMeHeading
-                text="Work History"
-                imgSrc={WorkUnderline}
-                zzWidth="24vw"
-                wrapHeight="60%"
-                scale="scaleY(0.7)"
-              />
-              {/* TODO: add work content here */}
+              <SkillsWorkContent>
+                <AboutMeHeading
+                  text="Skills"
+                  imgSrc={SkillsUnderline}
+                  zzWidth="12vw"
+                  scale="scaleY(0.8)"
+                />
+                <WorkSkillItem>
+                  <ArrowContainer></ArrowContainer>
+                  <WorkSkillText>
+                    JavaScript (Vanilla, React, Angular)
+                  </WorkSkillText>
+                </WorkSkillItem>
+                <WorkSkillItem>
+                  <ArrowContainer></ArrowContainer>
+                  <WorkSkillText>
+                    HTML and CSS (Styled Components, SASS/SCSS)
+                  </WorkSkillText>
+                </WorkSkillItem>
+                <WorkSkillItem>
+                  <ArrowContainer></ArrowContainer>
+                  <WorkSkillText>Working with APIs</WorkSkillText>
+                </WorkSkillItem>
+              </SkillsWorkContent>
+              <SkillsWorkContent>
+                <AboutMeHeading
+                  text="Work History"
+                  imgSrc={WorkUnderline}
+                  zzWidth="24vw"
+                  scale="scaleY(0.7)"
+                  width="max-content"
+                />
+                <WorkSkillItem>
+                  <ArrowContainer></ArrowContainer>
+                  <WorkSkillText>F5</WorkSkillText>
+                </WorkSkillItem>
+                <WorkSkillItem>
+                  <ArrowContainer></ArrowContainer>
+                  <WorkSkillText>Incyte</WorkSkillText>
+                </WorkSkillItem>
+                <WorkSkillItem>
+                  <ArrowContainer></ArrowContainer>
+                  <WorkSkillText>Moving Mountains</WorkSkillText>
+                </WorkSkillItem>
+                <WorkSkillItem>
+                  <ArrowContainer></ArrowContainer>
+                  <WorkSkillText>EWU</WorkSkillText>
+                </WorkSkillItem>
+              </SkillsWorkContent>
             </AboutMeDiv>
           </AboutDivContainer>
         </AboutMeContent>

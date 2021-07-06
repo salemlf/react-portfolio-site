@@ -5,7 +5,7 @@ import { Wrapper } from "./AboutMeDivStyles.js";
 const AboutMeDiv = ({
   height,
   width,
-  bgColor,
+  bgAttr,
   maxWidth,
   zIndex,
   marginLeft,
@@ -13,6 +13,7 @@ const AboutMeDiv = ({
   maxHeight,
   pos,
   children,
+  top,
 }) => {
   return (
     <Wrapper
@@ -22,9 +23,10 @@ const AboutMeDiv = ({
       width={width}
       marginLeft={marginLeft}
       marginTop={marginTop}
-      bgColor={bgColor}
+      bgAttr={bgAttr}
       maxWidth={maxWidth}
       maxHeight={maxHeight}
+      top={top}
     >
       {children}
     </Wrapper>

@@ -3,6 +3,8 @@ import styled from "styled-components";
 // TODO: add border radius prop
 export const Wrapper = styled.div`
   position: ${(props) => props.pos};
+  display: flex;
+  flex-wrap: wrap;
   z-index: ${(props) => props.zIndex};
   height: ${(props) => props.height};
   width: ${(props) => props.width};
@@ -13,4 +15,6 @@ export const Wrapper = styled.div`
   margin-top: ${(props) => props.marginTop};
   margin-left: ${(props) => props.marginLeft};
   grid-area: 1 / 1 / 2 / 2;
+  background: ${(props) => props.bgAttr};
+  top: ${(props) => props.top};
 `;

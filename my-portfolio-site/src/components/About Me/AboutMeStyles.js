@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import RightArrowImg from "../../images/right-arrow.svg";
+import { keyframes } from "styled-components";
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -51,4 +53,67 @@ export const AboutDivContainer = styled.div`
   justify-items: center;
   position: relative;
   width: 90%;
+`;
+
+export const SkillsWorkContent = styled.div`
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 2% 0;
+  align-items: center;
+`;
+
+export const ArrowAnimation = keyframes`
+    0% {
+      margin-left: 0;
+    }
+    50% {
+      margin-left: 5%;
+    }
+    75% {
+      margin-left: 2%;
+    }
+    100% {
+      margin-left: 0;
+    }
+`;
+
+//create container for arrow div, will be absolute
+// TODO: change arrow width and height to be responsive
+export const ArrowContainer = styled.div`
+  position: absolute;
+  margin-left: 0;
+  background: url(${RightArrowImg}) no-repeat;
+  background-size: cover;
+  width: calc(10px + (50 - 10) * ((100vw - 250px) / (1600 - 250)));
+  height: calc(10px + (50 - 10) * ((100vw - 250px) / (1600 - 250)));
+`;
+
+// creat container for text and arrow
+export const WorkSkillItem = styled.div`
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 5%;
+
+  &:hover ${ArrowContainer} {
+    animation-name: ${ArrowAnimation};
+    animation-delay: 250ms;
+    animation-timing-function: ease-in-out;
+    animation-duration: 700ms;
+    animation-iteration-count: 2;
+  }
+`;
+
+// create container for text, will be relative
+// TODO: change font-size, make responsive
+export const WorkSkillText = styled.h6`
+  position: relative;
+  font-size: calc(8px + (30 - 8) * ((100vw - 250px) / (1600 - 250)));
+  margin: 0;
+  margin-left: 15%;
+  font-weight: 300;
+  color: var(--offWhite);
 `;

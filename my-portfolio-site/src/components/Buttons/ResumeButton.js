@@ -23,6 +23,13 @@ const Wrapper = styled.button`
   }
 `;
 
+function goToResume() {
+  return window.open(
+    "https://docs.google.com/document/d/1ADGAB1CyNihrYlkf4GueWgctCPbmrtBw79bp4gr-AGE/edit?usp=sharing",
+    "_blank"
+  );
+}
+
 const ButtonText = styled.p`
   font-family: "Oswald", sans-serif;
   line-height: 0;
@@ -30,7 +37,7 @@ const ButtonText = styled.p`
 
 function ResumeButton({ className }) {
   return (
-    <Wrapper className={className}>
+    <Wrapper type="button" onClick={goToResume} className={className}>
       <ButtonText>Resume</ButtonText>
     </Wrapper>
   );

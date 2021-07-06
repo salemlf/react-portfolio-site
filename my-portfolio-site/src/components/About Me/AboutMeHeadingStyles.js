@@ -4,18 +4,16 @@ export const Wrapper = styled.div`
   position: relative;
   width: 100%;
   display: flex;
-  /* height: 40px; */
-  height: ${(props) => props.wrapHeight};
 `;
 
 //TODO: change to responsive text size
 // TODO: make font-size larger
 export const Heading = styled.h3`
-  /* font-size: 70px; */
   font-size: calc(15px + (70 - 15) * ((100vw - 250px) / (1600 - 250)));
   margin: 0;
   flex-basis: 100%;
   color: var(--mediumBlue);
+  width: ${(props) => props.width};
 `;
 
 // TODO: change size of underlines

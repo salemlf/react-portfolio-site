@@ -18,7 +18,7 @@ export const Image = styled.img`
 
 export const NameContent = styled.div`
   position: absolute;
-  top: 26vw;
+  top: 22vw;
   width: 100%;
   text-align: center;
 `;

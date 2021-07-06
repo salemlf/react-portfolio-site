@@ -7,11 +7,11 @@ import {
 } from "./AboutMeHeadingStyles";
 
 // TODO: pass in width for zig zig
-const AboutMeHeading = ({ text, imgSrc, zzWidth, wrapHeight, scale }) => {
+const AboutMeHeading = ({ text, imgSrc, zzWidth, scale, width }) => {
   return (
-    <Wrapper wrapHeight={wrapHeight}>
+    <Wrapper>
       <HeadingDivContainer>
-        <Heading>{text}</Heading>
+        <Heading width={width}>{text}</Heading>
         <UnderlineZigZag src={imgSrc} zzWidth={zzWidth} scale={scale} />
       </HeadingDivContainer>
     </Wrapper>

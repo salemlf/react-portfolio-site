@@ -9,8 +9,11 @@ export const InnerWrapper = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
-  /* justify-content:${(props) => props.justifyContent}; */
   margin-bottom: 10px;
+
+  @media (max-width: 750px) {
+    align-items: center;
+  }
 `;
 
 // TODO: pass margin-left value?
@@ -18,7 +21,6 @@ export const InnerWrapper = styled.div`
 // TODO: change font-family
 export const HeadingText = styled.h2`
   text-transform: uppercase;
-  /* font-size: 40px; */
   font-size: calc(24px + (70 - 24) * ((100vw - 250px) / (1600 - 250)));
   letter-spacing: 5px;
   align-self: ${(props) => props.alignSelf};
@@ -47,4 +49,8 @@ export const Line = styled.hr`
   position: relative;
   margin-left: ${(props) => props.marginLeftHr};
   font-size: unset;
+
+  @media (max-width: 750px) {
+    margin-left: auto;
+  }
 `;
