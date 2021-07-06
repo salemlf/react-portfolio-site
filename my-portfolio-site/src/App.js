@@ -3,6 +3,7 @@ import "./App.css";
 import MobileMenu from "./components/MobileMenu/MobileMenu";
 import Header from "./components/Header/Header";
 import AboutMe from "./components/About Me/AboutMe.js";
+import TempBanner from "./components/TempBanner.js";
 
 // TODO: move isOpen functionality into different component
 
@@ -24,6 +25,7 @@ const App = () => {
       <Header toggle={toggle} />
       <MobileMenu isOpen={isOpen} toggle={toggle} />
       <AboutMe />
+      <TempBanner></TempBanner>
     </div>
   );
 };

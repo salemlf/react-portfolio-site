@@ -72,8 +72,6 @@ export const ArrowAnimation = keyframes`
     }
 `;
 
-//create container for arrow div, will be absolute
-// TODO: change arrow width and height to be responsive
 export const ArrowContainer = styled.div`
   position: absolute;
   margin-left: 0;
@@ -83,7 +81,6 @@ export const ArrowContainer = styled.div`
   height: calc(10px + (50 - 10) * ((100vw - 250px) / (1600 - 250)));
 `;
 
-// creat container for text and arrow
 export const WorkSkillItem = styled.div`
   position: relative;
   width: 100%;
@@ -101,8 +98,6 @@ export const WorkSkillItem = styled.div`
   }
 `;
 
-// create container for text, will be relative
-// TODO: change font-size, make responsive
 export const WorkSkillText = styled.h6`
   position: relative;
   font-size: calc(8px + (30 - 8) * ((100vw - 250px) / (1600 - 250)));

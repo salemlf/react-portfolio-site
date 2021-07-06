@@ -37,8 +37,8 @@ body {
 }
 
 .App {
-  /* !added */
   overflow-x: clip;
+  overflow-y: hidden;
 }
 
 a,
