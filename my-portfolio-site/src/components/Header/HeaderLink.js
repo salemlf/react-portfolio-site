@@ -8,10 +8,14 @@ import {
   UnderlinePath,
 } from "./HeaderLinkStyles.js";
 
-function HeaderLink(props) {
-  const { link, linkText, onChildClick } = props;
+function tempAlert() {
+  alert("That section doesn't exist yet, sorry!");
+}
+
+// TODO: remove onChilldClick?
+function HeaderLink({ link, linkText, onChildClick }) {
   return (
-    <Wrapper>
+    <Wrapper onClick={tempAlert}>
       <Link href={link} onClick={onChildClick}>
         {linkText}
         {/* slide in class */}

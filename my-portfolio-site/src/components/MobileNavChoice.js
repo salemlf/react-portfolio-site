@@ -87,6 +87,10 @@ const MobileIcon = styled.svg`
   top: 0;
 `;
 
+function tempAlert() {
+  alert("That section doesn't exist yet, sorry!");
+}
+
 function MobileNavChoice({
   navItem,
   link,
@@ -97,7 +101,7 @@ function MobileNavChoice({
   viewBoxArg,
 }) {
   return (
-    <Wrapper href={link}>
+    <Wrapper onClick={tempAlert} href={link}>
       <Row className="row">
         <NavColumn className="col">
           <svg

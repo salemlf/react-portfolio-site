@@ -63,6 +63,7 @@ const AboutMe = () => {
             iconSrc={InfoIcon}
             altText="Info icon for about me section"
             marginLeftHr="20px"
+            id="about"
           />
           <AboutDivContainer>
             <AboutMeDiv
