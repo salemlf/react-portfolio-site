@@ -64,17 +64,11 @@ export const SkillsWorkContent = styled.div`
 `;
 
 export const ArrowAnimation = keyframes`
-    0% {
+    0%,100% {
       margin-left: 0;
     }
     50% {
       margin-left: 5%;
-    }
-    75% {
-      margin-left: 2%;
-    }
-    100% {
-      margin-left: 0;
     }
 `;
 

@@ -89,8 +89,8 @@ const AboutMe = () => {
               bgAttr={`url(${MeImage}) center/contain no-repeat`}
               zIndex="3"
               marginLeft="76%"
-              maxWidth="500px"
-              maxHeight="430px"
+              maxWidth="552px"
+              maxHeight="510px"
               top="2%"
             ></AboutMeDiv>
             <AboutMeDiv

@@ -22,8 +22,6 @@ const Header = ({ toggle }) => {
 
   const transformHamburger = () => {
     setIsX(!isX);
-    console.log("TEST");
-    console.log("isX", isX);
   };
   return (
     <Wrapper>

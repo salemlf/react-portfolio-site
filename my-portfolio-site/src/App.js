@@ -4,15 +4,19 @@ import MobileMenu from "./components/MobileMenu/MobileMenu";
 import Header from "./components/Header/Header";
 import AboutMe from "./components/About Me/AboutMe.js";
 
-// TODO: add state for mobile menu visibility
 // TODO: move isOpen functionality into different component
-// TODO: fix overflow issue
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
+    // TODO: change to less gross way
+    if (isOpen) {
+      document.body.classList.remove("lock-scroll");
+    } else {
+      document.body.classList.add("lock-scroll");
+    }
   };
 
   return (
