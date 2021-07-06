@@ -21,6 +21,10 @@ export const Wrapper = styled.nav`
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 4fr;
   right: ${({ isOpen }) => (isOpen ? "0" : "-75vw")};
+
+  @media only screen and (min-width: 900px) {
+    right: -75vw;
+  }
 `;
 
 export const ButtonContainer = styled.div`
