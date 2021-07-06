@@ -69,10 +69,26 @@ export const HamburgerMenu = styled.div`
     width: calc(30px + (50 - 30) * ((100vw - 250px) / (900 - 250)));
     height: calc(2px + (3 - 2) * ((100vw - 250px) / (900 - 250)));
     background-color: var(--offWhite);
+    transition: all 300ms ease-in-out;
+    transform-origin: 1px 1px;
 
     &:not(:last-child) {
       margin-bottom: calc(7px + (14 - 7) * ((100vw - 250px) / (900 - 250)));
     }
+
+    ${({ isX }) =>
+      isX &&
+      `
+    &:first-child {
+      transform: rotate(45deg);
+    }
+    &:nth-child(2) {
+      opacity: 0;
+    }
+    &:last-child {
+      transform: rotate(-45deg);
+    }
+  `}
   }
 `;
 
@@ -83,7 +99,6 @@ export const HamburgerMenuLink = styled.a`
 
 // TODO: temporary (will be image for logo), change
 export const LogoText = styled.h2`
-  /* font-size: 60px; */
   font-size: calc(30px + (60 - 30) * ((100vw - 250px) / (900 - 250)));
   line-height: 0.5;
 `;

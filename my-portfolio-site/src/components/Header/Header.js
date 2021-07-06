@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import HeaderLink from "./HeaderLink";
 import DarkLightModeButton from "../Buttons/DarkLightModeButton";
 import ResumeButton from "../Buttons/ResumeButton";
@@ -14,12 +14,17 @@ import {
   HamburgerMenuLink,
 } from "./HeaderStyles.js";
 
-// TODO: change anchor tag and spans to styled component
+// TODO: change spans to styled component
 // TODO: testing, keep squiggle under selected nav link
-// TODO: turn hamburger menu button into "X" if isOpen
-// TODO: hide mobile menu sidebar if max-width is exceeded
 
 const Header = ({ toggle }) => {
+  const [isX, setIsX] = useState(false);
+
+  const transformHamburger = () => {
+    setIsX(!isX);
+    console.log("TEST");
+    console.log("isX", isX);
+  };
   return (
     <Wrapper>
       <ButtonAndLinkContainer>
@@ -41,12 +46,14 @@ const Header = ({ toggle }) => {
       <MobileLogoText>
         <LogoText>SLF</LogoText>
       </MobileLogoText>
-      <HamburgerMenu onClick={toggle}>
-        <HamburgerMenuLink
-          href="#"
-          id="hamburgerBtn"
-          className="hamburger hamburger-btn header__menu hide-for-desktop"
-        >
+      <HamburgerMenu
+        onClick={() => {
+          toggle();
+          transformHamburger();
+        }}
+        isX={isX}
+      >
+        <HamburgerMenuLink href="#">
           <span />
           <span />
           <span />

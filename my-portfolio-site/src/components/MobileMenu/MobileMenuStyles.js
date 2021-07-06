@@ -3,7 +3,6 @@ import NavOptions from "../NavOptions";
 import DarkLightModeButton from "../Buttons/DarkLightModeButton";
 import ResumeButton from "../Buttons/ResumeButton";
 
-// TODO: change right value based on show/hide prop
 export const Wrapper = styled.nav`
   background-color: #7c5a90;
   color: #f7eede;
