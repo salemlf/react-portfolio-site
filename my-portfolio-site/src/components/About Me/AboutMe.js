@@ -26,6 +26,7 @@ import SkillsUnderline from "../../images/squiggly-line-skills.svg";
 import WorkUnderline from "../../images/squiggly-line-work.svg";
 import MeImage from "../../images/me.jpg";
 import ImageBg from "../../images/photo-background.svg";
+import Sparkles from "../../components/Sparkles.js";
 
 const AboutMe = () => {
   return (
@@ -41,7 +42,9 @@ const AboutMe = () => {
         // TODO: change from div to styled component
         children={
           <div>
-            <NameHeading>Salem Fenn</NameHeading>
+            <Sparkles>
+              <NameHeading>Salem Fenn</NameHeading>
+            </Sparkles>
             <NameSubtitle>Frontend Engineer</NameSubtitle>
           </div>
         }
