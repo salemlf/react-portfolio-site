@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 
+// original code not mine, from Josh Comeau (got permisson to use)
+
 // colors array for sparkles, yellow more likely to appear
 const colors = [
   "var(--lightGreen)",
@@ -82,7 +84,7 @@ const useRandomInterval = (callback, minDelay, maxDelay) => {
   return cancel;
 };
 
-// TODO: make size dynamic depending on screen size
+//changed so sparkles are closer to word(s)
 const generateSparkle = (color) => {
   const sparkle = {
     id: String(random(10000, 99999)),
@@ -90,7 +92,7 @@ const generateSparkle = (color) => {
     color,
     size: random(20, 40),
     style: {
-      top: random(0, 100) + "%",
+      top: random(20, 80) + "%",
       left: random(0, 100) + "%",
     },
   };
@@ -177,6 +179,8 @@ const SparkleSvg = styled.svg`
   @media (prefers-reduced-motion: no-preference) {
     animation: ${spin} 1000ms linear;
   }
+  width: 3vw;
+  height: 3vw;
 `;
 const ChildWrapper = styled.strong`
   position: relative;
