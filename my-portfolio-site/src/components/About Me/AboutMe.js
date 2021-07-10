@@ -72,11 +72,9 @@ const AboutMe = () => {
           />
           <AboutDivContainer>
             <AboutMeDiv
-              pos="absolute"
-              height="50vw"
-              width="45vw"
+              pos="relative"
               bgAttr={"var(--yellow)"}
-              zIndex="1"
+              zIndex="3"
               marginLeft="-50%"
               maxWidth="600px"
               maxHeight="750px"
@@ -91,9 +89,10 @@ const AboutMe = () => {
                   scale="scaleY(0.8)"
                 />
                 <BioText>
-                  Hello there. <br /> I'm a software engineer living in Spokane,
-                  WA. My skillset definitely leans towards frontend, but I also
-                  have past experience with backend. I create accessible user
+                  <strong>Hello there.</strong>
+                  <br /> I'm a software engineer living in Spokane, WA. My
+                  skillset definitely leans towards frontend, but I also have
+                  past experience with backend. I create accessible user
                   interfaces and focus on providing others with software that
                   makes their lives easier. My first exposure to
                   programming/code was creating Runescape gold hacks as a child.
@@ -104,29 +103,12 @@ const AboutMe = () => {
             </AboutMeDiv>
             <AboutMeDiv
               pos="relative"
-              height="37vw"
-              width="33vw"
-              bgAttr={`url(${MeImage}) center/contain no-repeat`}
               zIndex="3"
-              marginLeft="76%"
-              maxWidth="552px"
-              maxHeight="510px"
-              top="2%"
               gridArea="imageContainer"
-              gridCol="3 / 4"
-            ></AboutMeDiv>
-            <AboutMeDiv
-              pos="relative"
-              height="50vw"
-              width="53vw"
-              bgAttr={`url(${ImageBg}) top right/cover no-repeat`}
-              zIndex="2"
-              marginLeft="32%"
-              maxWidth="890px"
-              maxHeight="841px"
-              top="-2%"
-              gridArea="imageContainer"
-              gridCol="2 / 4"
+              bgAttr={`url(${MeImage}) center center/contain no-repeat`}
+              gridCol="2 / 3"
+              gridRow="1 / 2"
+              maxWidth="530px"
             ></AboutMeDiv>
             <AboutMeDiv
               pos="relative"
@@ -134,8 +116,6 @@ const AboutMe = () => {
               width="48vw"
               bgAttr={"var(--pink)"}
               zIndex="2"
-              marginLeft="44%"
-              marginTop="56%"
               maxWidth="830px"
               maxHeight="1175px"
               gridArea="workSkills"

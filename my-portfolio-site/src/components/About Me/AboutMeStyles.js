@@ -49,21 +49,14 @@ export const FlexWrapper = styled.section`
 `;
 
 export const AboutDivContainer = styled.div`
-  /* display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  justify-items: center;
-  position: relative;
-  width: 90%; */
   width: 100%;
-  /* TODO: remove border */
-  border: 1px solid black;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "bio bio imageContainer"
-    "workSkills workSkills workSkills";
+    "bio imageContainer"
+    "workSkills workSkills";
+  grid-template-rows: 1fr 1fr;
 `;
 
 export const AboutTextContainer = styled.div`
@@ -81,7 +74,7 @@ export const SkillsWorkContent = styled.div`
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  margin: 2vw;
+  margin: 4% 2%;
   align-items: center;
 `;
 
@@ -109,6 +102,7 @@ export const WorkSkillItem = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-top: 2%;
   margin-left: 5%;
 
   &:hover ${ArrowContainer} {
