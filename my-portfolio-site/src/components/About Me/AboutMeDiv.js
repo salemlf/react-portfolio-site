@@ -14,12 +14,16 @@ const AboutMeDiv = ({
   pos,
   children,
   top,
+  minHeight,
+  gridArea,
+  gridCol,
 }) => {
   return (
     <Wrapper
       pos={pos}
       zIndex={zIndex}
       height={height}
+      minHeight={minHeight}
       width={width}
       marginLeft={marginLeft}
       marginTop={marginTop}
@@ -27,6 +31,8 @@ const AboutMeDiv = ({
       maxWidth={maxWidth}
       maxHeight={maxHeight}
       top={top}
+      gridArea={gridArea}
+      gridCol={gridCol}
     >
       {children}
     </Wrapper>

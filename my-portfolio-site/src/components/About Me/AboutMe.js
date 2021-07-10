@@ -11,6 +11,8 @@ import {
   WorkSkillItem,
   WorkSkillText,
   ArrowContainer,
+  AboutTextContainer,
+  BioText,
 } from "./AboutMeStyles.js";
 import NameDiv from "../../images/name-background-div.svg";
 import PersonOnComputer from "../../images/person-on-computer.svg";
@@ -77,14 +79,28 @@ const AboutMe = () => {
               zIndex="1"
               marginLeft="-50%"
               maxWidth="600px"
-              maxHeight="800px"
+              maxHeight="750px"
+              minHeight="230px"
+              gridArea="bio"
             >
-              <AboutMeHeading
-                text="Bio"
-                imgSrc={AboutUnderline}
-                zzWidth="10vw"
-                scale="scaleY(0.8)"
-              />
+              <AboutTextContainer>
+                <AboutMeHeading
+                  text="Bio"
+                  imgSrc={AboutUnderline}
+                  zzWidth="10vw"
+                  scale="scaleY(0.8)"
+                />
+                <BioText>
+                  Hello there. <br /> I'm a software engineer living in Spokane,
+                  WA. My skillset definitely leans towards frontend, but I also
+                  have past experience with backend. I create accessible user
+                  interfaces and focus on providing others with software that
+                  makes their lives easier. My first exposure to
+                  programming/code was creating Runescape gold hacks as a child.
+                  I now work at F5 as a software engineer and create tools for
+                  fellow developers.
+                </BioText>
+              </AboutTextContainer>
             </AboutMeDiv>
             <AboutMeDiv
               pos="relative"
@@ -96,6 +112,8 @@ const AboutMe = () => {
               maxWidth="552px"
               maxHeight="510px"
               top="2%"
+              gridArea="imageContainer"
+              gridCol="3 / 4"
             ></AboutMeDiv>
             <AboutMeDiv
               pos="relative"
@@ -107,6 +125,8 @@ const AboutMe = () => {
               maxWidth="890px"
               maxHeight="841px"
               top="-2%"
+              gridArea="imageContainer"
+              gridCol="2 / 4"
             ></AboutMeDiv>
             <AboutMeDiv
               pos="relative"
@@ -118,6 +138,8 @@ const AboutMe = () => {
               marginTop="56%"
               maxWidth="830px"
               maxHeight="1175px"
+              gridArea="workSkills"
+              gridCol="2 / 4"
             >
               <SkillsWorkContent>
                 <AboutMeHeading

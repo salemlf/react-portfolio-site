@@ -2,6 +2,8 @@ import styled from "styled-components";
 import RightArrowImg from "../../images/right-arrow.svg";
 import { keyframes } from "styled-components";
 
+// TODO: create global variables for responsive font-size
+
 export const Wrapper = styled.div`
   width: 100%;
   position: relative;
@@ -47,19 +49,39 @@ export const FlexWrapper = styled.section`
 `;
 
 export const AboutDivContainer = styled.div`
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   justify-items: center;
   position: relative;
-  width: 90%;
+  width: 90%; */
+  width: 100%;
+  /* TODO: remove border */
+  border: 1px solid black;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "bio bio imageContainer"
+    "workSkills workSkills workSkills";
+`;
+
+export const AboutTextContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin: 2vw;
+`;
+
+export const BioText = styled.p`
+  font-size: calc(8px + (30 - 8) * ((100vw - 250px) / (1600 - 250)));
 `;
 
 export const SkillsWorkContent = styled.div`
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  margin: 2% 0;
+  margin: 2vw;
   align-items: center;
 `;
 

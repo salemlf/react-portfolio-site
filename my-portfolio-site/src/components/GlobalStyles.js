@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-  ${"" /* new dark mode colors */}
 --deepDarkBlue: hsl(231, 49%, 13%);
 --mediumBlue: hsl(217, 45%, 20%);
 --purple: hsl(277, 23%, 46%);
@@ -11,7 +10,6 @@ const GlobalStyles = createGlobalStyle`
 --tannish: hsl(13, 48%, 75%);
 --offWhite: hsl(38, 61%, 92%);
 
-${"" /* hover colors */}
 --mediumPurpleishBlueHover: hsla(255, 100%, 28%, 0.75);
 --lightPurpleishBlueHover: hsla(255, 100%, 41%, 0.75);
 --mobileMenuHover: hsla(275, 38, 61, 0.6);

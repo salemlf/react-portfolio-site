@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
   position: relative;
   width: 100%;
   display: flex;
+  height: max-content;
 `;
 
 //TODO: change to responsive text size
@@ -27,8 +28,6 @@ export const HeadingDivContainer = styled.div`
   display: flex;
   width: min-content;
   flex-wrap: wrap;
-  margin-top: 1vw;
-  margin-left: 2vw;
   justify-content: flex-start;
   text-align: center;
   align-content: flex-start;
