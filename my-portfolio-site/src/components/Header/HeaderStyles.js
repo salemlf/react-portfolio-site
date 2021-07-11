@@ -6,13 +6,15 @@ export const Wrapper = styled.nav`
   color: var(--offWhite);
   position: relative;
   z-index: 2;
+  width: 100%;
 
   @media only screen and (max-width: 900px) {
     z-index: auto;
     display: flex;
+    flex-basis: 100%;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
     height: 11vmin;
     min-height: 80px;
     max-height: 300px;

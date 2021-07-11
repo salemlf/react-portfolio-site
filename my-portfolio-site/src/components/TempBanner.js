@@ -4,6 +4,7 @@ import styled from "styled-components";
 const BannerContainer = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
 `;
 
 const Banner = styled.div`
@@ -18,7 +19,7 @@ const Banner = styled.div`
 
 const BannerText = styled.h2`
   color: var(--mediumBlue);
-  font-size: calc(30px + (60 - 30) * ((100vw - 250px) / (900 - 250)));
+  font-size: calc(18px + (60 - 18) * ((100vw - 250px) / (900 - 250)));
   margin: 0 auto;
 `;
 
