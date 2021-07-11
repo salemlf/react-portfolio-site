@@ -131,7 +131,7 @@ const AboutMe = () => {
                 <WorkSkillItem>
                   <ArrowContainer></ArrowContainer>
                   <WorkSkillText>
-                    JavaScript (Vanilla, React, Angular)
+                    JavaScript (Vanilla, React, AngularJS)
                   </WorkSkillText>
                 </WorkSkillItem>
                 <WorkSkillItem>

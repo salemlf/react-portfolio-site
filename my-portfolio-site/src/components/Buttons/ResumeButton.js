@@ -2,24 +2,60 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.button`
-  border-radius: 5px;
-  font-size: calc(12px + (30 - 12) * ((100vw - 250px) / (1600 - 250)));
+  position: relative;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+`;
+
+const Shadow = styled.span`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsl(0deg 0% 0% / 0.25);
+  border-radius: 4px;
+  transform: translateY(6px);
+  filter: blur(4px);
+
+  ${Wrapper}:hover &, ${Wrapper}:active & {
+    transform: translateY(10px);
+    transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  }
+`;
+
+const ButtonEdge = styled.span`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: hsl(13deg, 48%, 65%);
+`;
+
+const ButtonFront = styled.span`
   padding: calc(4px + (12 - 4) * ((100vw - 250px) / (1600 - 250)))
     calc(10px + (40 - 10) * ((100vw - 250px) / (1600 - 250)));
-  box-shadow: inset 2px 5px 8px rgba(0, 0, 0, 0.25);
-  box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
-  border: 0;
+  font-size: calc(12px + (30 - 12) * ((100vw - 250px) / (1600 - 250)));
+  display: block;
+  border-radius: 4px;
+  background: hsl(13deg, 48%, 75%);
   color: white;
-  font-weight: 400;
-  cursor: pointer;
-  background: #deaea1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.3s;
-  opacity: 1;
-  :hover {
-    opacity: 0.75;
+  will-change: transform;
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+  transform: translateY(-6px);
+
+  ${Wrapper}:hover &, ${Wrapper}:active & {
+    transform: translateY(-8px);
+    transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  }
+
+  ${Wrapper}:focus & {
+    transform: translateY(-2px);
+    transition: transform 34ms;
   }
 `;
 
@@ -38,7 +74,11 @@ const ButtonText = styled.p`
 function ResumeButton({ className }) {
   return (
     <Wrapper type="button" onClick={goToResume} className={className}>
-      <ButtonText>Resume</ButtonText>
+      <Shadow></Shadow>
+      <ButtonEdge></ButtonEdge>
+      <ButtonFront>
+        <ButtonText>Resume</ButtonText>
+      </ButtonFront>
     </Wrapper>
   );
 }

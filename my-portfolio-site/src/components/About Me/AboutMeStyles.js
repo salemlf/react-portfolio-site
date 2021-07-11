@@ -63,7 +63,7 @@ export const AboutTextContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  margin: 2vw;
+  margin: 5%;
 `;
 
 export const BioText = styled.p`

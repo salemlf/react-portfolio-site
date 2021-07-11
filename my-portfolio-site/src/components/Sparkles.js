@@ -174,6 +174,8 @@ const SparkleWrapper = styled.span`
     animation: ${comeInOut} 700ms forwards;
   }
 `;
+
+// TODO: add max width and height
 const SparkleSvg = styled.svg`
   display: block;
   @media (prefers-reduced-motion: no-preference) {
