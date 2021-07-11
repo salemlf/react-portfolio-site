@@ -7,6 +7,14 @@ const Wrapper = styled.button`
   border: none;
   padding: 0;
   cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: filter 600ms;
+
+  &:hover {
+    transition: filter 250ms;
+    filter: brightness(110%);
+  }
 `;
 
 const Shadow = styled.span`
@@ -33,7 +41,13 @@ const ButtonEdge = styled.span`
   width: 100%;
   height: 100%;
   border-radius: 4px;
-  background: hsl(13deg, 48%, 65%);
+  background: linear-gradient(
+    to left,
+    hsl(13deg, 48%, 28%) 0%,
+    hsl(13deg, 48%, 65%) 8%,
+    hsl(13deg, 48%, 65%) 92%,
+    hsl(13deg, 48%, 28%) 100%
+  );
 `;
 
 const ButtonFront = styled.span`
@@ -54,7 +68,7 @@ const ButtonFront = styled.span`
   }
 
   ${Wrapper}:focus & {
-    transform: translateY(-2px);
+    transform: translateY(-4px);
     transition: transform 34ms;
   }
 `;
