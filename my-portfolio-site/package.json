@@ -2,13 +2,14 @@
   "name": "my-portfolio-site",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://salemlf.github.io",
+  "homepage": "https://salemlf.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.13.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.5",
+    "gh-pages": "^3.2.3",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-is": "^16.13.1",
@@ -22,6 +23,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
