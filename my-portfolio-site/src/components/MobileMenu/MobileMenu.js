@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-
-// TODO: Use useState hook
+import React from "react";
 
 import {
   Wrapper,

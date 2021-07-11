@@ -1,6 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-import { keyframes } from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 // original code not mine, from Josh Comeau (got permisson to use)
 

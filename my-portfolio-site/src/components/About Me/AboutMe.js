@@ -27,8 +27,9 @@ import AboutUnderline from "../../images/squiggle-line-about.svg";
 import SkillsUnderline from "../../images/squiggly-line-skills.svg";
 import WorkUnderline from "../../images/squiggly-line-work.svg";
 import MeImage from "../../images/me.jpg";
-import ImageBg from "../../images/photo-background.svg";
 import Sparkles from "../../components/Sparkles.js";
+import Emoji from "../../components/Emoji.js";
+import SpeechBubbleNotification from "../../components/SpeechBubbleNotification.js";
 
 const AboutMe = () => {
   return (
@@ -60,6 +61,12 @@ const AboutMe = () => {
         top={"-75vw"}
         maxHeight={"75vmax"}
       />
+      <SpeechBubbleNotification>
+        <h6>
+          FYI: This site in a work in progress! I decided to release what I've
+          done so far and will be adding on the other sections soon.
+        </h6>
+      </SpeechBubbleNotification>
       <FlexWrapper>
         <AboutMeContent>
           <SectionHeading
@@ -96,8 +103,13 @@ const AboutMe = () => {
                   interfaces and focus on providing others with software that
                   makes their lives easier. My first exposure to
                   programming/code was creating Runescape gold hacks as a child.
-                  I now work at F5 as a software engineer and create tools for
-                  fellow developers.
+                  <Emoji
+                    label="laughing face emoji"
+                    size="10px"
+                    symbol="😅"
+                  ></Emoji>
+                  <br />I now work at F5 as a software engineer and create tools
+                  for fellow developers.
                 </BioText>
               </AboutTextContainer>
             </AboutMeDiv>
