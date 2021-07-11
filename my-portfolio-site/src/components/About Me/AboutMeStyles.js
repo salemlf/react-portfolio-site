@@ -117,7 +117,7 @@ export const WorkSkillItem = styled.div`
 
 export const WorkSkillText = styled.h6`
   position: relative;
-  font-size: calc(8px + (30 - 8) * ((100vw - 250px) / (1600 - 250)));
+  font-size: calc(8px + (25 - 8) * ((100vw - 250px) / (1600 - 250)));
   margin: 0;
   margin-left: 15%;
   font-weight: 300;
