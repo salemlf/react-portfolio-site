@@ -83,7 +83,8 @@ export const ArrowAnimation = keyframes`
       margin-left: 0;
     }
     50% {
-      margin-left: 5%;
+      /* margin-left: 5%; */
+      margin-left: calc(3% + (4 - 3) * ((100vw - 250px) / (1600 - 250)));
     }
 `;
 
