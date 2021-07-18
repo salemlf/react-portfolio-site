@@ -24,17 +24,17 @@ export const AboutMeContent = styled.div`
 `;
 
 export const NameHeading = styled.h1`
-  font-size: calc(20px + (100 - 20) * ((100vw - 250px) / (1600 - 250)));
+  font-size: calc(24px + (100 - 24) * ((100vw - 250px) / (1600 - 250)));
   font-family: "Condiment", cursive;
   color: var(--mediumBlue);
   margin-bottom: 0px;
 `;
 
 export const NameSubtitle = styled.h1`
-  font-size: calc(18px + (80 - 18) * ((100vw - 250px) / (1600 - 250)));
+  font-size: calc(20px + (80 - 20) * ((100vw - 250px) / (1600 - 250)));
   font-family: "Condiment", cursive;
   color: var(--yellow);
-  margin: 2px 0px 0px 0px;
+  margin: -10px 0px 0px 0px;
 `;
 
 export const FlexWrapper = styled.section`
@@ -45,7 +45,7 @@ export const FlexWrapper = styled.section`
   margin: 0 auto;
   align-items: center;
   position: relative;
-  top: -48vw;
+  top: -84vw;
 `;
 
 export const AboutDivContainer = styled.div`
@@ -57,6 +57,15 @@ export const AboutDivContainer = styled.div`
     "bio imageContainer"
     "workSkills workSkills";
   grid-template-rows: 1fr 1fr;
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "bio"
+      "imageContainer"
+      "workSkills";
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 `;
 
 export const AboutTextContainer = styled.div`
@@ -67,14 +76,14 @@ export const AboutTextContainer = styled.div`
 `;
 
 export const BioText = styled.p`
-  font-size: calc(8px + (30 - 8) * ((100vw - 250px) / (1600 - 250)));
+  font-size: calc(16px + (32 - 16) * ((100vw - 250px) / (1600 - 250)));
 `;
 
 export const SkillsWorkContent = styled.div`
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  margin: 4% 2%;
+  margin: 3% 2%;
   align-items: center;
 `;
 
@@ -83,7 +92,6 @@ export const ArrowAnimation = keyframes`
       margin-left: 0;
     }
     50% {
-      /* margin-left: 5%; */
       margin-left: calc(3% + (4 - 3) * ((100vw - 250px) / (1600 - 250)));
     }
 `;
@@ -93,8 +101,8 @@ export const ArrowContainer = styled.div`
   margin-left: 0;
   background: url(${RightArrowImg}) no-repeat;
   background-size: cover;
-  width: calc(10px + (50 - 10) * ((100vw - 250px) / (1600 - 250)));
-  height: calc(10px + (50 - 10) * ((100vw - 250px) / (1600 - 250)));
+  width: calc(16px + (50 - 16) * ((100vw - 250px) / (1600 - 250)));
+  height: calc(16px + (50 - 16) * ((100vw - 250px) / (1600 - 250)));
 `;
 
 export const WorkSkillItem = styled.div`
@@ -104,7 +112,7 @@ export const WorkSkillItem = styled.div`
   align-items: center;
   justify-content: flex-start;
   margin-top: 2%;
-  margin-left: 5%;
+  margin-left: 10%;
 
   &:hover ${ArrowContainer} {
     animation-name: ${ArrowAnimation};
@@ -117,7 +125,7 @@ export const WorkSkillItem = styled.div`
 
 export const WorkSkillText = styled.h6`
   position: relative;
-  font-size: calc(8px + (25 - 8) * ((100vw - 250px) / (1600 - 250)));
+  font-size: calc(16px + (32 - 16) * ((100vw - 250px) / (1600 - 250)));
   margin: 0;
   margin-left: 15%;
   font-weight: 300;

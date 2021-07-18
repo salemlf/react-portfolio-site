@@ -10,8 +10,8 @@ export const Wrapper = styled.div`
   max-width: ${(props) => props.maxWidth};
   border-radius: 5px;
   grid-area: ${(props) => props.gridArea};
-  grid-column: ${(props) => props.gridCol};
-  grid-row: ${(props) => props.gridRow};
   background: ${(props) => props.bgAttr};
   top: ${(props) => props.top};
+  justify-self: ${(props) => props.justifySelf};
+  margin: ${(props) => props.margin};
 `;

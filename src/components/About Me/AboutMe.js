@@ -37,11 +37,11 @@ const AboutMe = () => {
       {/* TODO: pass in name as child */}
       <ResponsiveBackground
         image={NameDiv}
-        passedHeight={"100vw"}
+        passedHeight={"120vw"}
         altText={"3D rectangle for name"}
         zIndex={1}
         top={"-17vw"}
-        maxHeight={"96vmax"}
+        maxHeight={"100vw"}
         // TODO: change from div to styled component
         children={
           <div>
@@ -55,10 +55,10 @@ const AboutMe = () => {
       {/* TODO: add text here with this font: font-family: 'Condiment', cursive; */}
       <ResponsiveBackground
         image={PersonOnComputer}
-        passedHeight={"70vw"}
+        passedHeight={"80vw"}
         altText={"Person on computer"}
         zIndex={2}
-        top={"-75vw"}
+        top={"-85vw"}
         maxHeight={"75vmax"}
       />
       <SpeechBubbleNotification>
@@ -92,7 +92,6 @@ const AboutMe = () => {
                 <AboutMeHeading
                   text="Bio"
                   imgSrc={AboutUnderline}
-                  zzWidth="10vw"
                   scale="scaleY(0.8)"
                 />
                 <BioText>
@@ -118,9 +117,8 @@ const AboutMe = () => {
               zIndex="3"
               gridArea="imageContainer"
               bgAttr={`url(${MeImage}) center center/contain no-repeat`}
-              gridCol="2 / 3"
-              gridRow="1 / 2"
-              maxWidth="530px"
+              maxWidth="450px"
+              margin="0 10%"
             ></AboutMeDiv>
             <AboutMeDiv
               pos="relative"
@@ -131,13 +129,13 @@ const AboutMe = () => {
               maxWidth="830px"
               maxHeight="1175px"
               gridArea="workSkills"
-              gridCol="2 / 4"
+              justifySelf="center"
+              margin="0 5%"
             >
               <SkillsWorkContent>
                 <AboutMeHeading
                   text="Skills"
                   imgSrc={SkillsUnderline}
-                  zzWidth="12vw"
                   scale="scaleY(0.8)"
                 />
                 <WorkSkillItem>
@@ -161,7 +159,6 @@ const AboutMe = () => {
                 <AboutMeHeading
                   text="Work History"
                   imgSrc={WorkUnderline}
-                  zzWidth="24vw"
                   scale="scaleY(0.7)"
                   width="max-content"
                 />

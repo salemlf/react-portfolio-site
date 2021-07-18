@@ -12,16 +12,17 @@ const slideInFromLeft = keyframes`
 
 const SpeechBubble = styled.div`
   bottom: 138vw;
-  left: 25%;
+  left: 1%;
   position: relative;
   background: var(--tannish);
   border-radius: 2vw;
-  width: 30vw;
-  height: 15vw;
+  width: 52vw;
+  height: 28vw;
   max-height: 16vmax;
   max-width: 32vmax;
   z-index: 5;
   animation: 1s ease-out 0s 1 ${slideInFromLeft};
+  bottom: 160vw;
 
   &:after {
     content: "";
@@ -45,7 +46,7 @@ const FlexContainer = styled.div`
   height: 100%;
   align-items: center;
   margin: 0 5%;
-  font-size: calc(5px + (30 - 5) * ((100vw - 250px) / (1600 - 250)));
+  font-size: calc(16px + (35 - 16) * ((100vw - 250px) / (1600 - 250)));
 `;
 
 const SpeechBubbleNotification = ({ children }) => {

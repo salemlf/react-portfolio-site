@@ -23,7 +23,7 @@ const DarkLightButtonEdge = styled(ButtonEdge)`
 
 const DarkLightButtonFront = styled(ButtonFront)`
   padding: calc(14px + (42 - 14) * ((100vw - 250px) / (1600 - 250)));
-  font-size: calc(12px + (30 - 12) * ((100vw - 250px) / (1600 - 250)));
+  font-size: calc(16px + (32 - 16) * ((100vw - 250px) / (1600 - 250)));
   font-weight: 400;
   background: hsl(50deg, 70%, 64%);
   background-image: url(${SunIcon});

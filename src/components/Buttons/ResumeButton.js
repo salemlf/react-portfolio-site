@@ -15,7 +15,7 @@ const ResumeButtonEdge = styled(ButtonEdge)`
 const ResumeButtonFront = styled(ButtonFront)`
   padding: calc(4px + (12 - 4) * ((100vw - 250px) / (1600 - 250)))
     calc(10px + (40 - 10) * ((100vw - 250px) / (1600 - 250)));
-  font-size: calc(12px + (30 - 12) * ((100vw - 250px) / (1600 - 250)));
+  font-size: calc(16px + (32 - 16) * ((100vw - 250px) / (1600 - 250)));
   background: hsl(13deg, 48%, 75%);
 `;
 

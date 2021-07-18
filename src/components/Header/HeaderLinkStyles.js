@@ -87,7 +87,7 @@ export const Link = styled.a`
   align-items: center;
   position: relative;
   /* overflow: hidden; */
-  font-size: calc(14px + (32 - 14) * ((100vw - 250px) / (1600 - 250)));
+  font-size: calc(16px + (40 - 16) * ((100vw - 250px) / (1600 - 250)));
   color: var(--offWhite);
   cursor: pointer;
   transition: color 300ms ease-in-out;

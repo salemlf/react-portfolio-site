@@ -8,17 +8,16 @@ export const Wrapper = styled.div`
 `;
 
 export const Heading = styled.h3`
-  font-size: calc(15px + (50 - 15) * ((100vw - 250px) / (1600 - 250)));
+  font-size: calc(26px + (50 - 26) * ((100vw - 250px) / (1600 - 250)));
   margin: 0;
   flex-basis: 100%;
   color: var(--mediumBlue);
   width: ${(props) => props.width};
 `;
 
-// TODO: change size of underlines
 export const UnderlineZigZag = styled.img`
   color: ${(props) => props.color};
-  width: ${(props) => props.zzWidth};
+  width: 100%;
   transform: ${(props) => props.scale};
 `;
 

@@ -10,19 +10,19 @@ const AboutMeDiv = ({
   children,
   top,
   gridArea,
-  gridCol,
-  gridRow,
+  justifySelf,
+  margin,
 }) => {
   return (
     <Wrapper
+      margin={margin}
+      justifySelf={justifySelf}
       pos={pos}
       zIndex={zIndex}
       bgAttr={bgAttr}
       maxWidth={maxWidth}
       top={top}
       gridArea={gridArea}
-      gridCol={gridCol}
-      gridRow={gridRow}
     >
       {children}
     </Wrapper>
