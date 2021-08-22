@@ -13,7 +13,7 @@ import {
   ArrowContainer,
   AboutTextContainer,
   BioText,
-} from "../components/About Me/AboutMeStyles.js";
+} from "./AboutMeStyles.js";
 import NameDiv from "../images/name-background-div.svg";
 import PersonOnComputer from "../images/person-on-computer.svg";
 import SectionHeading from "../components/SectionHeadings/SectionHeading.js";

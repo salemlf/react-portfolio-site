@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import RightArrowImg from "../../images/right-arrow.svg";
+import RightArrowImg from "../images/right-arrow.svg";
 import { keyframes } from "styled-components";
 
 // TODO: create global variables for responsive font-size
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.section`
   width: 100%;
   position: relative;
   z-index: 1;

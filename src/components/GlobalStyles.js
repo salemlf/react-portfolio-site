@@ -38,7 +38,7 @@ body {
   font-size: var(--font-med);
   font-weight: 300;
   background-color: var(--deepDarkBlue);
-
+  color: var(--offWhite);
 }
   a,
   a:visited,
