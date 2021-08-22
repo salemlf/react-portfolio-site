@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import MobileMenu from "./components/MobileMenu/MobileMenu";
 import Header from "./components/Header/Header";
-import AboutMe from "./components/About Me/AboutMe.js";
+import AboutMe from "./Sections/AboutMe.js";
 import TempBanner from "./components/TempBanner.js";
 
 // TODO: move isOpen functionality into different component

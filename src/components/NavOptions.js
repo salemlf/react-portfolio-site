@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import MobileNavChoice from "./MobileNavChoice";
+import MobileNavChoice from "./MobileMenu/MobileNavChoice";
 
 // TODO: move into style file
 const Wrapper = styled.section`

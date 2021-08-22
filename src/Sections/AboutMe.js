@@ -1,5 +1,5 @@
 import React from "react";
-import ResponsiveBackground from "../Backgrounds/ResponsiveBackground.js";
+import ResponsiveBackground from "../components/Backgrounds/ResponsiveBackground.js";
 import {
   Wrapper,
   FlexWrapper,
@@ -13,23 +13,23 @@ import {
   ArrowContainer,
   AboutTextContainer,
   BioText,
-} from "./AboutMeStyles.js";
-import NameDiv from "../../images/name-background-div.svg";
-import PersonOnComputer from "../../images/person-on-computer.svg";
-import SectionHeading from "../SectionHeadings/SectionHeading.js";
-import InfoIcon from "../../images/Info Squared.svg";
-import AboutMeDiv from "./AboutMeDiv.js";
-import AboutBgBlob from "../../images/about-me-background-blob.svg";
-import SectionBackground from "../Backgrounds/SectionBackground.js";
-import AboutMeHeading from "./AboutMeHeading";
+} from "../components/About Me/AboutMeStyles.js";
+import NameDiv from "../images/name-background-div.svg";
+import PersonOnComputer from "../images/person-on-computer.svg";
+import SectionHeading from "../components/SectionHeadings/SectionHeading.js";
+import InfoIcon from "../images/Info Squared.svg";
+import AboutMeDiv from "../components/About Me/AboutMeDiv.js";
+import AboutBgBlob from "../images/about-me-background-blob.svg";
+import SectionBackground from "../components/Backgrounds/SectionBackground.js";
+import AboutMeHeading from "../components/About Me/AboutMeHeading";
 
-import AboutUnderline from "../../images/squiggle-line-about.svg";
-import SkillsUnderline from "../../images/squiggly-line-skills.svg";
-import WorkUnderline from "../../images/squiggly-line-work.svg";
-import MeImage from "../../images/me.jpg";
-import Sparkles from "../../components/Sparkles.js";
-import Emoji from "../../components/Emoji.js";
-import SpeechBubbleNotification from "../../components/SpeechBubbleNotification.js";
+import AboutUnderline from "../images/squiggle-line-about.svg";
+import SkillsUnderline from "../images/squiggly-line-skills.svg";
+import WorkUnderline from "../images/squiggly-line-work.svg";
+import MeImage from "../images/me.jpg";
+import Sparkles from "../components/Sparkles.js";
+import Emoji from "../components/Emoji.js";
+import SpeechBubbleNotification from "../components/SpeechBubbleNotification.js";
 
 const AboutMe = () => {
   return (
