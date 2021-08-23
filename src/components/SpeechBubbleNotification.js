@@ -18,8 +18,8 @@ const SpeechBubble = styled.div`
   border-radius: 2vw;
   width: 30vw;
   height: 15vw;
-  max-height: 16vmax;
-  max-width: 32vmax;
+  max-height: 300px;
+  max-width: 500px;
   z-index: 5;
   animation: 1s ease-out 0s 1 ${slideInFromLeft};
 

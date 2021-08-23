@@ -17,6 +17,11 @@
   --font-med: 1.125rem;
   --font-sm: 0.875rem;
 }
+
+html {
+  height: 100%;
+}
+
 *,
 *::before,
 *::after {
@@ -28,6 +33,7 @@
 }
 
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
@@ -38,13 +44,13 @@ body {
 
 .App {
   overflow-x: clip;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   position: relative;
-  height: 100%;
   /* margin: 0 auto; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-content: flex-start;
+  min-height: 100%;
 }
 
 a,

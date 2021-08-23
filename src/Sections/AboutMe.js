@@ -37,7 +37,7 @@ const AboutMe = () => {
       {/* TODO: pass in name as child */}
       <ResponsiveBackground
         image={NameDiv}
-        passedHeight={"100vw"}
+        // passedHeight={"100vw"}
         altText={"3D rectangle for name"}
         zIndex={1}
         top={"-17vw"}
@@ -55,7 +55,7 @@ const AboutMe = () => {
       {/* TODO: add text here with this font: font-family: 'Condiment', cursive; */}
       <ResponsiveBackground
         image={PersonOnComputer}
-        passedHeight={"70vw"}
+        // passedHeight={"70vw"}
         altText={"Person on computer"}
         zIndex={2}
         top={"-75vw"}
@@ -124,7 +124,7 @@ const AboutMe = () => {
             ></AboutMeDiv>
             <AboutMeDiv
               pos="relative"
-              height="70vw"
+              // height="70vw"
               width="48vw"
               bgAttr={"var(--pink)"}
               zIndex="2"

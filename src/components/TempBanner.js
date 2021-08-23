@@ -9,7 +9,8 @@ const BannerContainer = styled.div`
 
 const Banner = styled.div`
   flex-shrink: 0;
-  height: 30vw;
+  min-height: 200px;
+  max-height: 300px;
   background-color: var(--tannish);
   display: flex;
   flex-direction: column;

@@ -7,7 +7,7 @@ const Wrapper = styled.section`
   width: 100%;
   display: flex;
   padding: 0px 10px 0px 0px;
-  height: 100%;
+  /* height: 100%; */
   justify-content: center;
   overflow-y: clip;
 `;
