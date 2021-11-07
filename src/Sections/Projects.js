@@ -17,7 +17,6 @@ export default Projects;
 
 const Wrapper = styled.section`
   position: relative;
-  /* top: -40vw; */
   width: 100%;
   min-height: 1000px;
   margin-top: -75vw;

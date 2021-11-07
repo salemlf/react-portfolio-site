@@ -11,5 +11,6 @@ export const BgImg = styled.img`
   width: 100%;
   height: initial;
   transform: ${(props) => props.transformStyles};
+  /* TODO: change to contain? */
   object-fit: cover;
 `;
