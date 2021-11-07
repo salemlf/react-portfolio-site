@@ -67,6 +67,7 @@ export const AboutTextContainer = styled.div`
 `;
 
 export const BioText = styled.p`
+  color: var(--deepDarkBlue);
   font-size: calc(8px + (30 - 8) * ((100vw - 250px) / (1600 - 250)));
 `;
 
@@ -121,5 +122,5 @@ export const WorkSkillText = styled.h6`
   margin: 0;
   margin-left: 15%;
   font-weight: 300;
-  color: var(--offWhite);
+  color: var(--deepDarkBlue);
 `;
