@@ -26,7 +26,8 @@ import AboutMeHeading from "../components/About Me/AboutMeHeading";
 import AboutUnderline from "../images/squiggle-line-about.svg";
 import SkillsUnderline from "../images/squiggly-line-skills.svg";
 import WorkUnderline from "../images/squiggly-line-work.svg";
-import MeImage from "../images/me.jpg";
+// import MeImage from "../images/me.jpg";
+import MeUpdated from "../images/me_updated.jpg";
 import Sparkles from "../components/Sparkles.js";
 import Emoji from "../components/Emoji.js";
 import SpeechBubbleNotification from "../components/SpeechBubbleNotification.js";
@@ -117,7 +118,7 @@ const AboutMe = () => {
               pos="relative"
               zIndex="3"
               gridArea="imageContainer"
-              bgAttr={`url(${MeImage}) center center/contain no-repeat`}
+              bgAttr={`url(${MeUpdated}) no-repeat center/cover`}
               gridCol="2 / 3"
               gridRow="1 / 2"
               maxWidth="530px"
