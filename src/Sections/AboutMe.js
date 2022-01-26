@@ -22,11 +22,9 @@ import AboutMeDiv from "../components/About Me/AboutMeDiv.js";
 import AboutBgBlob from "../images/about-me-background-blob.svg";
 import SectionBackground from "../components/Backgrounds/SectionBackground.js";
 import AboutMeHeading from "../components/About Me/AboutMeHeading";
-
 import AboutUnderline from "../images/squiggle-line-about.svg";
 import SkillsUnderline from "../images/squiggly-line-skills.svg";
 import WorkUnderline from "../images/squiggly-line-work.svg";
-// import MeImage from "../images/me.jpg";
 import MeUpdated from "../images/me_updated.jpg";
 import Sparkles from "../components/Sparkles.js";
 import Emoji from "../components/Emoji.js";
